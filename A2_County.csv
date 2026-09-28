@@ -1,0 +1,233 @@
+﻿County;CountyFIPS;Condition;Multiplier
+Solano;6095;Type 2 diabetes;1.030739773
+Solano;6095;Hypertension;1.029982142
+Solano;6095;Coronary Heart Disease;0.959153754
+Solano;6095;Stroke;0.997945351
+Placer;6061;Type 2 diabetes;0.805851095
+Placer;6061;Hypertension;0.936686658
+Placer;6061;Coronary Heart Disease;0.939970679
+Placer;6061;Stroke;0.860297716
+Kings;6031;Type 2 diabetes;1.218147004
+Kings;6031;Hypertension;1.141936723
+Kings;6031;Coronary Heart Disease;1.266082955
+Kings;6031;Stroke;1.27324062
+Fresno;6019;Type 2 diabetes;1.218147004
+Fresno;6019;Hypertension;1.156864
+Fresno;6019;Coronary Heart Disease;1.189350655
+Fresno;6019;Stroke;1.204416803
+Amador;6005;Type 2 diabetes;0.843332541
+Amador;6005;Hypertension;0.996395768
+Amador;6005;Coronary Heart Disease;1.074252204
+Amador;6005;Stroke;0.997945351
+Santa Barbara;6083;Type 2 diabetes;0.937036157
+Santa Barbara;6083;Hypertension;0.959077574
+Santa Barbara;6083;Coronary Heart Disease;1.016702979
+Santa Barbara;6083;Stroke;0.963533442
+Orange;6059;Type 2 diabetes;0.927665795
+Orange;6059;Hypertension;0.959077574
+Orange;6059;Coronary Heart Disease;0.959153754
+Orange;6059;Stroke;0.929121534
+Modoc;6049;Type 2 diabetes;0.908925072
+Modoc;6049;Hypertension;1.074763974
+Modoc;6049;Coronary Heart Disease;1.17016758
+Modoc;6049;Stroke;1.135592986
+Tehama;6103;Type 2 diabetes;0.937036157
+Tehama;6103;Hypertension;1.108350349
+Tehama;6103;Coronary Heart Disease;1.150984505
+Tehama;6103;Stroke;1.135592986
+San Benito;6069;Type 2 diabetes;0.974517603
+San Benito;6069;Hypertension;0.966541213
+San Benito;6069;Coronary Heart Disease;0.959153754
+San Benito;6069;Stroke;0.929121534
+Yolo;6113;Type 2 diabetes;1.002628688
+Yolo;6113;Hypertension;1.029982142
+Yolo;6113;Coronary Heart Disease;1.112618355
+Yolo;6113;Stroke;1.101181077
+Madera;6039;Type 2 diabetes;1.190035919
+Madera;6039;Hypertension;1.071032155
+Madera;6039;Coronary Heart Disease;1.227716805
+Madera;6039;Stroke;1.238828712
+Siskiyou;6093;Type 2 diabetes;0.908925072
+Siskiyou;6093;Hypertension;1.063568516
+Siskiyou;6093;Coronary Heart Disease;1.17016758
+Siskiyou;6093;Stroke;1.135592986
+Kern;6029;Type 2 diabetes;1.218147004
+Kern;6029;Hypertension;1.145668542
+Kern;6029;Coronary Heart Disease;1.227716805
+Kern;6029;Stroke;1.307652529
+Sacramento;6067;Type 2 diabetes;0.993258326
+Sacramento;6067;Hypertension;1.052373058
+Sacramento;6067;Coronary Heart Disease;1.055069129
+Sacramento;6067;Stroke;1.101181077
+Colusa;6011;Type 2 diabetes;1.096332304
+Colusa;6011;Hypertension;1.063568516
+Colusa;6011;Coronary Heart Disease;1.20853373
+Colusa;6011;Stroke;1.170004894
+Santa Clara;6085;Type 2 diabetes;0.937036157
+Santa Clara;6085;Hypertension;0.876977549
+Santa Clara;6085;Coronary Heart Disease;0.844055303
+Santa Clara;6085;Stroke;0.825885808
+Glenn;6021;Type 2 diabetes;1.049480496
+Glenn;6021;Hypertension;1.104618529
+Glenn;6021;Coronary Heart Disease;1.189350655
+Glenn;6021;Stroke;1.204416803
+San Francisco;6075;Type 2 diabetes;0.862073264
+San Francisco;6075;Hypertension;0.888173007
+San Francisco;6075;Coronary Heart Disease;0.805689153
+San Francisco;6075;Stroke;0.75706199
+Alpine;6003;Type 2 diabetes;0.824591818
+Alpine;6003;Hypertension;0.996395768
+Alpine;6003;Coronary Heart Disease;1.09343528
+Alpine;6003;Stroke;0.997945351
+San Joaquin;6077;Type 2 diabetes;1.086961942
+San Joaquin;6077;Hypertension;1.056104878
+San Joaquin;6077;Coronary Heart Disease;1.074252204
+San Joaquin;6077;Stroke;1.066769168
+Contra Costa;6013;Type 2 diabetes;0.899554711
+Contra Costa;6013;Hypertension;0.929223019
+Contra Costa;6013;Coronary Heart Disease;0.959153754
+Contra Costa;6013;Stroke;0.929121534
+Mono;6051;Type 2 diabetes;0.83396218
+Mono;6051;Hypertension;0.974004852
+Mono;6051;Coronary Heart Disease;1.055069129
+Mono;6051;Stroke;0.963533442
+Sutter;6101;Type 2 diabetes;1.086961942
+Sutter;6101;Hypertension;1.078495794
+Sutter;6101;Coronary Heart Disease;1.17016758
+Sutter;6101;Stroke;1.170004894
+Yuba;6115;Type 2 diabetes;1.021369411
+Yuba;6115;Hypertension;1.093423071
+Yuba;6115;Coronary Heart Disease;1.189350655
+Yuba;6115;Stroke;1.204416803
+Los Angeles;6037;Type 2 diabetes;1.068221219
+Los Angeles;6037;Hypertension;1.003859407
+Los Angeles;6037;Coronary Heart Disease;0.959153754
+Los Angeles;6037;Stroke;0.997945351
+Calaveras;6009;Type 2 diabetes;0.880813987
+Calaveras;6009;Hypertension;1.0411776
+Calaveras;6009;Coronary Heart Disease;1.150984505
+Calaveras;6009;Stroke;1.101181077
+Lassen;6035;Type 2 diabetes;0.983887965
+Lassen;6035;Hypertension;1.127009445
+Lassen;6035;Coronary Heart Disease;1.266082955
+Lassen;6035;Stroke;1.238828712
+Stanislaus;6099;Type 2 diabetes;1.021369411
+Stanislaus;6099;Hypertension;1.112082168
+Stanislaus;6099;Coronary Heart Disease;1.074252204
+Stanislaus;6099;Stroke;1.066769168
+Alameda;6001;Type 2 diabetes;0.862073264
+Alameda;6001;Hypertension;0.959077574
+Alameda;6001;Coronary Heart Disease;0.901604529
+Alameda;6001;Stroke;0.894709625
+Riverside;6065;Type 2 diabetes;0.983887965
+Riverside;6065;Hypertension;1.003859407
+Riverside;6065;Coronary Heart Disease;1.035886054
+Riverside;6065;Stroke;0.997945351
+Santa Cruz;6087;Type 2 diabetes;1.368072789
+Santa Cruz;6087;Hypertension;1.015054865
+Santa Cruz;6087;Coronary Heart Disease;1.20853373
+Santa Cruz;6087;Stroke;1.135592986
+Mariposa;6043;Type 2 diabetes;0.918295434
+Mariposa;6043;Hypertension;1.052373058
+Mariposa;6043;Coronary Heart Disease;1.24689988
+Mariposa;6043;Stroke;1.238828712
+Monterey;6053;Type 2 diabetes;1.040110134
+Monterey;6053;Hypertension;1.033713961
+Monterey;6053;Coronary Heart Disease;1.112618355
+Monterey;6053;Stroke;1.101181077
+Tulare;6107;Type 2 diabetes;1.236887727
+Tulare;6107;Hypertension;1.153132181
+Tulare;6107;Coronary Heart Disease;1.24689988
+Tulare;6107;Stroke;1.27324062
+Humboldt;6023;Type 2 diabetes;1.011999049
+Humboldt;6023;Hypertension;1.112082168
+Humboldt;6023;Coronary Heart Disease;1.342815256
+Humboldt;6023;Stroke;1.238828712
+San Diego;6073;Type 2 diabetes;0.880813987
+San Diego;6073;Hypertension;0.914295742
+San Diego;6073;Coronary Heart Disease;0.978336829
+San Diego;6073;Stroke;0.963533442
+San Luis Obispo;6079;Type 2 diabetes;0.787110372
+San Luis Obispo;6079;Hypertension;0.992663949
+San Luis Obispo;6079;Coronary Heart Disease;0.997519904
+San Luis Obispo;6079;Stroke;0.929121534
+Tuolumne;6109;Type 2 diabetes;0.83396218
+Tuolumne;6109;Hypertension;1.015054865
+Tuolumne;6109;Coronary Heart Disease;1.074252204
+Tuolumne;6109;Stroke;1.03235726
+Mendocino;6045;Type 2 diabetes;0.918295434
+Mendocino;6045;Hypertension;1.044909419
+Mendocino;6045;Coronary Heart Disease;1.13180143
+Mendocino;6045;Stroke;1.101181077
+Del Norte;6015;Type 2 diabetes;1.049480496
+Del Norte;6015;Hypertension;1.138204903
+Del Norte;6015;Coronary Heart Disease;1.361998331
+Del Norte;6015;Stroke;1.376476346
+Imperial;6025;Type 2 diabetes;1.414924597
+Imperial;6025;Hypertension;1.115813987
+Imperial;6025;Coronary Heart Disease;1.28526603
+Imperial;6025;Stroke;1.307652529
+Shasta;6089;Type 2 diabetes;0.871443626
+Shasta;6089;Hypertension;0.996395768
+Shasta;6089;Coronary Heart Disease;1.13180143
+Shasta;6089;Stroke;1.066769168
+Lake;6033;Type 2 diabetes;0.993258326
+Lake;6033;Hypertension;1.003859407
+Lake;6033;Coronary Heart Disease;1.035886054
+Lake;6033;Stroke;0.963533442
+Plumas;6063;Type 2 diabetes;0.796480733
+Plumas;6063;Hypertension;0.996395768
+Plumas;6063;Coronary Heart Disease;1.055069129
+Plumas;6063;Stroke;0.963533442
+Sonoma;6097;Type 2 diabetes;0.77774001
+Sonoma;6097;Hypertension;0.929223019
+Sonoma;6097;Coronary Heart Disease;0.939970679
+Sonoma;6097;Stroke;0.860297716
+Marin;6041;Type 2 diabetes;0.684036395
+Marin;6041;Hypertension;0.806072981
+Marin;6041;Coronary Heart Disease;0.824872228
+Marin;6041;Stroke;0.722650082
+Napa;6055;Type 2 diabetes;0.899554711
+Napa;6055;Hypertension;0.970273032
+Napa;6055;Coronary Heart Disease;1.035886054
+Napa;6055;Stroke;0.997945351
+Butte;6007;Type 2 diabetes;0.918295434
+Butte;6007;Hypertension;1.074763974
+Butte;6007;Coronary Heart Disease;1.112618355
+Butte;6007;Stroke;1.101181077
+Merced;6047;Type 2 diabetes;1.274369173
+Merced;6047;Hypertension;1.141936723
+Merced;6047;Coronary Heart Disease;1.304449105
+Merced;6047;Stroke;1.342064438
+Trinity;6105;Type 2 diabetes;1.152554473
+Trinity;6105;Hypertension;1.324795871
+Trinity;6105;Coronary Heart Disease;1.342815256
+Trinity;6105;Stroke;1.238828712
+Ventura;6111;Type 2 diabetes;0.946406518
+Ventura;6111;Hypertension;1.0411776
+Ventura;6111;Coronary Heart Disease;0.997519904
+Ventura;6111;Stroke;0.963533442
+El Dorado;6017;Type 2 diabetes;0.730888202
+El Dorado;6017;Hypertension;0.936686658
+El Dorado;6017;Coronary Heart Disease;0.939970679
+El Dorado;6017;Stroke;0.860297716
+Inyo;6027;Type 2 diabetes;0.871443626
+Inyo;6027;Hypertension;0.988932129
+Inyo;6027;Coronary Heart Disease;1.035886054
+Inyo;6027;Stroke;0.997945351
+San Mateo;6081;Type 2 diabetes;0.83396218
+San Mateo;6081;Hypertension;0.906832103
+San Mateo;6081;Coronary Heart Disease;0.824872228
+San Mateo;6081;Stroke;0.791473899
+Nevada;6057;Type 2 diabetes;1.386813512
+Nevada;6057;Hypertension;1.50765502
+Nevada;6057;Coronary Heart Disease;1.515462931
+Nevada;6057;Stroke;1.548535889
+San Bernardino;6071;Type 2 diabetes;1.161924835
+San Bernardino;6071;Hypertension;1.115813987
+San Bernardino;6071;Coronary Heart Disease;1.09343528
+San Bernardino;6071;Stroke;1.135592986
+Sierra;6091;Type 2 diabetes;1.040110134
+Sierra;6091;Hypertension;1.153132181
+Sierra;6091;Coronary Heart Disease;1.304449105
+Sierra;6091;Stroke;1.27324062

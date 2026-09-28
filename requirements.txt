@@ -1,0 +1,6 @@
+scikit-learn==1.9.1
+pandas==2.3.3
+streamlit==1.60.0
+plotly==6.9.0
+joblib==1.6.0
+numpy==2.0.1

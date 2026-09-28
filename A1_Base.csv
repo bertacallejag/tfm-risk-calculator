@@ -1,0 +1,129 @@
+﻿Condition;Age Band;Sex;Race/Ethnicity;Annual Rate(per 1,000);Base 10-yr incidence p0
+Type 2 diabetes;18-34;Male;Hispanic;4.05;0.0397
+Type 2 diabetes;18-34;Male;non-Hispanic White;2.75;0.0271
+Type 2 diabetes;18-34;Male;non-Hispanic Black;4.50;0.0441
+Type 2 diabetes;18-34;Male;non-Hispanic Asian;4.00;0.0392
+Type 2 diabetes;18-34;Female;Hispanic;4.31;0.0422
+Type 2 diabetes;18-34;Female;non-Hispanic White;2.92;0.0289
+Type 2 diabetes;18-34;Female;non-Hispanic Black;4.79;0.0468
+Type 2 diabetes;18-34;Female;non-Hispanic Asian;4.25;0.0417
+Type 2 diabetes;35-49;Male;Hispanic;6.99;0.0677
+Type 2 diabetes;35-49;Male;non-Hispanic White;4.75;0.0465
+Type 2 diabetes;35-49;Male;non-Hispanic Black;7.77;0.0750
+Type 2 diabetes;35-49;Male;non-Hispanic Asian;6.90;0.0669
+Type 2 diabetes;35-49;Female;Hispanic;7.44;0.0720
+Type 2 diabetes;35-49;Female;non-Hispanic White;5.05;0.0494
+Type 2 diabetes;35-49;Female;non-Hispanic Black;8.27;0.0797
+Type 2 diabetes;35-49;Female;non-Hispanic Asian;7.35;0.0711
+Type 2 diabetes;50-64;Male;Hispanic;12.87;0.1215
+Type 2 diabetes;50-64;Male;non-Hispanic White;8.74;0.0841
+Type 2 diabetes;50-64;Male;non-Hispanic Black;14.30;0.1342
+Type 2 diabetes;50-64;Male;non-Hispanic Asian;12.71;0.1201
+Type 2 diabetes;50-64;Female;Hispanic;13.70;0.1289
+Type 2 diabetes;50-64;Female;non-Hispanic White;9.31;0.0893
+Type 2 diabetes;50-64;Female;non-Hispanic Black;15.23;0.1422
+Type 2 diabetes;50-64;Female;non-Hispanic Asian;13.54;0.1274
+Type 2 diabetes;65+;Male;Hispanic;9.32;0.0894
+Type 2 diabetes;65+;Male;non-Hispanic White;6.33;0.0615
+Type 2 diabetes;65+;Male;non-Hispanic Black;10.35;0.0988
+Type 2 diabetes;65+;Male;non-Hispanic Asian;9.20;0.0883
+Type 2 diabetes;65+;Female;Hispanic;9.92;0.0949
+Type 2 diabetes;65+;Female;non-Hispanic White;6.74;0.0653
+Type 2 diabetes;65+;Female;non-Hispanic Black;11.02;0.1049
+Type 2 diabetes;65+;Female;non-Hispanic Asian;9.80;0.0938
+Hypertension;18-34;Male;Hispanic;-;0.3380
+Hypertension;18-34;Male;non-Hispanic White;-;0.3030
+Hypertension;18-34;Male;non-Hispanic Black;-;0.4020
+Hypertension;18-34;Male;non-Hispanic Asian;-;0.2820
+Hypertension;18-34;Female;Hispanic;-;0.3040
+Hypertension;18-34;Female;non-Hispanic White;-;0.2730
+Hypertension;18-34;Female;non-Hispanic Black;-;0.3620
+Hypertension;18-34;Female;non-Hispanic Asian;-;0.2550
+Hypertension;35-49;Male;Hispanic;-;0.3610
+Hypertension;35-49;Male;non-Hispanic White;-;0.3240
+Hypertension;35-49;Male;non-Hispanic Black;-;0.4300
+Hypertension;35-49;Male;non-Hispanic Asian;-;0.3020
+Hypertension;35-49;Female;Hispanic;-;0.3250
+Hypertension;35-49;Female;non-Hispanic White;-;0.2920
+Hypertension;35-49;Female;non-Hispanic Black;-;0.3870
+Hypertension;35-49;Female;non-Hispanic Asian;-;0.2720
+Hypertension;50-64;Male;Hispanic;-;0.3610
+Hypertension;50-64;Male;non-Hispanic White;-;0.3240
+Hypertension;50-64;Male;non-Hispanic Black;-;0.4290
+Hypertension;50-64;Male;non-Hispanic Asian;-;0.3020
+Hypertension;50-64;Female;Hispanic;-;0.3250
+Hypertension;50-64;Female;non-Hispanic White;-;0.2920
+Hypertension;50-64;Female;non-Hispanic Black;-;0.3970
+Hypertension;50-64;Female;non-Hispanic Asian;-;0.2720
+Hypertension;65+;Male;Hispanic;-;0.6800
+Hypertension;65+;Male;non-Hispanic White;-;0.6100
+Hypertension;65+;Male;non-Hispanic Black;-;0.8090
+Hypertension;65+;Male;non-Hispanic Asian;-;0.5690
+Hypertension;65+;Female;Hispanic;-;0.6130
+Hypertension;65+;Female;non-Hispanic White;-;0.5500
+Hypertension;65+;Female;non-Hispanic Black;-;0.7290
+Hypertension;65+;Female;non-Hispanic Asian;-;0.5130
+Coronary Heart Disease;18-34;Male;Hispanic;;0.0039
+Coronary Heart Disease;18-34;Male;non-Hispanic White;;0.0036
+Coronary Heart Disease;18-34;Male;non-Hispanic Black;;0.0026
+Coronary Heart Disease;18-34;Male;non-Hispanic Asian;;0.0024
+Coronary Heart Disease;18-34;Female;Hispanic;;0.0016
+Coronary Heart Disease;18-34;Female;non-Hispanic White;;0.0015
+Coronary Heart Disease;18-34;Female;non-Hispanic Black;;0.0011
+Coronary Heart Disease;18-34;Female;non-Hispanic Asian;;0.0010
+Coronary Heart Disease;35-49;Male;Hispanic;;0.0118
+Coronary Heart Disease;35-49;Male;non-Hispanic White;;0.0110
+Coronary Heart Disease;35-49;Male;non-Hispanic Black;;0.0079
+Coronary Heart Disease;35-49;Male;non-Hispanic Asian;;0.0074
+Coronary Heart Disease;35-49;Female;Hispanic;;0.0050
+Coronary Heart Disease;35-49;Female;non-Hispanic White;;0.0046
+Coronary Heart Disease;35-49;Female;non-Hispanic Black;;0.0033
+Coronary Heart Disease;35-49;Female;non-Hispanic Asian;;0.0031
+Coronary Heart Disease;50-64;Male;Hispanic;;0.0335
+Coronary Heart Disease;50-64;Male;non-Hispanic White;;0.0312
+Coronary Heart Disease;50-64;Male;non-Hispanic Black;;0.0225
+Coronary Heart Disease;50-64;Male;non-Hispanic Asian;;0.0209
+Coronary Heart Disease;50-64;Female;Hispanic;;0.0141
+Coronary Heart Disease;50-64;Female;non-Hispanic White;;0.0131
+Coronary Heart Disease;50-64;Female;non-Hispanic Black;;0.0095
+Coronary Heart Disease;50-64;Female;non-Hispanic Asian;;0.0088
+Coronary Heart Disease;65+;Male;Hispanic;;0.0825
+Coronary Heart Disease;65+;Male;non-Hispanic White;;0.0767
+Coronary Heart Disease;65+;Male;non-Hispanic Black;;0.0554
+Coronary Heart Disease;65+;Male;non-Hispanic Asian;;0.0514
+Coronary Heart Disease;65+;Female;Hispanic;;0.0347
+Coronary Heart Disease;65+;Female;non-Hispanic White;;0.0323
+Coronary Heart Disease;65+;Female;non-Hispanic Black;;0.0233
+Coronary Heart Disease;65+;Female;non-Hispanic Asian;;0.0217
+Stroke;18-34;Male;Hispanic;;0.0031
+Stroke;18-34;Male;non-Hispanic White;;0.0025
+Stroke;18-34;Male;non-Hispanic Black;;0.0028
+Stroke;18-34;Male;non-Hispanic Asian;;0.0017
+Stroke;18-34;Female;Hispanic;;0.0024
+Stroke;18-34;Female;non-Hispanic White;;0.0020
+Stroke;18-34;Female;non-Hispanic Black;;0.0022
+Stroke;18-34;Female;non-Hispanic Asian;;0.0014
+Stroke;35-49;Male;Hispanic;;0.0094
+Stroke;35-49;Male;non-Hispanic White;;0.0076
+Stroke;35-49;Male;non-Hispanic Black;;0.0085
+Stroke;35-49;Male;non-Hispanic Asian;;0.0052
+Stroke;35-49;Female;Hispanic;;0.0074
+Stroke;35-49;Female;non-Hispanic White;;0.0060
+Stroke;35-49;Female;non-Hispanic Black;;0.0067
+Stroke;35-49;Female;non-Hispanic Asian;;0.0041
+Stroke;50-64;Male;Hispanic;;0.0266
+Stroke;50-64;Male;non-Hispanic White;;0.0216
+Stroke;50-64;Male;non-Hispanic Black;;0.0241
+Stroke;50-64;Male;non-Hispanic Asian;;0.0147
+Stroke;50-64;Female;Hispanic;;0.0210
+Stroke;50-64;Female;non-Hispanic White;;0.0170
+Stroke;50-64;Female;non-Hispanic Black;;0.0190
+Stroke;50-64;Female;non-Hispanic Asian;;0.0116
+Stroke;65+;Male;Hispanic;;0.0656
+Stroke;65+;Male;non-Hispanic White;;0.0533
+Stroke;65+;Male;non-Hispanic Black;;0.0594
+Stroke;65+;Male;non-Hispanic Asian;;0.0362
+Stroke;65+;Female;Hispanic;;0.0517
+Stroke;65+;Female;non-Hispanic White;;0.0420
+Stroke;65+;Female;non-Hispanic Black;;0.0468
+Stroke;65+;Female;non-Hispanic Asian;;0.0285
