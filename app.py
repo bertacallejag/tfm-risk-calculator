@@ -545,8 +545,8 @@ def screen_results():
 
     st.caption("How to read the 10-year column: high blood pressure means reaching "
                "130/80 or above, which many people do before they are diagnosed. "
-               "Heart disease means coronary heart disease; the today column "
-               "covers any kind of heart disease.")
+               "For heart disease, the 10-year column is the chance of a heart attack; "
+               "the today column covers any kind of heart disease.")
 
     with st.expander("What is driving these numbers"):
         pick = st.selectbox("Condition", list(CONDITIONS.values()), key="pick")
