@@ -6,6 +6,12 @@ Same logic as RiskEngine.ipynb:
     risk     = min(CAP, 1 - (1 - final p0) ** R)
 
 Needs A1_Base.csv, A2_County.csv and B_RR.csv in the same folder as this file.
+
+Calibration (optional files, used when present):
+  A1_Base_ref_2024.csv  reference-level baselines calibrated on CHIS 2024, so the
+                        6 factors CHIS measures are not double counted
+  B_centering.csv       average multiplier of each factor CHIS does not measure;
+                        each RR is divided by it, so an average answer = 1.0
 """
 
 from pathlib import Path
@@ -22,7 +28,9 @@ def _clean_dash(s):
 
 
 # keep_default_na=False so the reference category "None" is not turned into NaN
-base = pd.read_csv(HERE / "A1_Base.csv", sep=";", keep_default_na=False)
+BASE_FILE = "A1_Base_ref_2024.csv" if (HERE / "A1_Base_ref_2024.csv").exists() else "A1_Base.csv"
+CALIBRATED = BASE_FILE != "A1_Base.csv"
+base = pd.read_csv(HERE / BASE_FILE, sep=";", keep_default_na=False)
 county = pd.read_csv(HERE / "A2_County.csv", sep=";", keep_default_na=False)
 rr = pd.read_csv(HERE / "B_RR.csv", sep=";", keep_default_na=False)
 
@@ -37,6 +45,11 @@ P0 = {(r["Condition"], r["Age Band"], r["Sex"], r["Race/Ethnicity"]): r["Base 10
 COUNTY_MULT = {(r["Condition"], str(r["County"]).strip().lower()): r["Multiplier"]
                for _, r in county.iterrows()}
 RR_LOOKUP = {(r["Condition"], r["Factor"], r["Category"]): r["RR"] for _, r in rr.iterrows()}
+
+CENTER = {}
+if (HERE / "B_centering.csv").exists():
+    _c = pd.read_csv(HERE / "B_centering.csv")
+    CENTER = {(r.Condition, r.Factor): r.mean_RR for r in _c.itertuples()}
 
 RACES = sorted(base["Race/Ethnicity"].unique())
 
@@ -77,7 +90,7 @@ def factor_rr(condition, factor, value):
     category = value.get(condition) if isinstance(value, dict) else value
     if category is None:
         return None
-    return RR_LOOKUP.get((condition, factor, category), 1.0)
+    return RR_LOOKUP.get((condition, factor, category), 1.0) / CENTER.get((condition, factor), 1.0)
 
 
 def project(condition, profile):

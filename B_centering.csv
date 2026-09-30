@@ -1,0 +1,45 @@
+Condition,Factor,mean_RR
+Type 2 diabetes,Family history,1.7787
+Type 2 diabetes,Pregnancy complications,1.4501
+Type 2 diabetes,Sleep,1.1358
+Type 2 diabetes,Sleep apnea,1.063
+Type 2 diabetes,Diet,1.1213
+Type 2 diabetes,Coffee consumption,0.9217
+Type 2 diabetes,Sodium intake,1.0
+Type 2 diabetes,Depression,1.0786
+Type 2 diabetes,Shift work,1.009
+Type 2 diabetes,Working hours,1.0
+Type 2 diabetes,Social isolation,1.0
+Hypertension,Family history,1.1196
+Hypertension,Pregnancy complications,1.189
+Hypertension,Sleep,1.0383
+Hypertension,Sleep apnea,1.032
+Hypertension,Diet,1.0924
+Hypertension,Coffee consumption,0.9826
+Hypertension,Sodium intake,1.11
+Hypertension,Depression,1.0524
+Hypertension,Shift work,1.031
+Hypertension,Working hours,1.0
+Hypertension,Social isolation,1.0
+Coronary Heart Disease,Family history,1.184
+Coronary Heart Disease,Pregnancy complications,1.0812
+Coronary Heart Disease,Sleep,1.1974
+Coronary Heart Disease,Sleep apnea,1.056
+Coronary Heart Disease,Diet,1.1882
+Coronary Heart Disease,Coffee consumption,0.9594
+Coronary Heart Disease,Sodium intake,1.0
+Coronary Heart Disease,Depression,1.0393
+Coronary Heart Disease,Shift work,1.023
+Coronary Heart Disease,Working hours,1.0065
+Coronary Heart Disease,Social isolation,1.0296
+Stroke,Family history,1.042
+Stroke,Pregnancy complications,1.0567
+Stroke,Sleep,1.1042
+Stroke,Sleep apnea,1.124
+Stroke,Diet,1.1502
+Stroke,Coffee consumption,0.9594
+Stroke,Sodium intake,1.101
+Stroke,Depression,1.059
+Stroke,Shift work,1.005
+Stroke,Working hours,1.0381
+Stroke,Social isolation,1.0326

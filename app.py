@@ -214,7 +214,10 @@ def build_profile(a):
         "Family history": {c: family_to_category(a.get(f"fam_{c}"))
                            for c in CONDITIONS},
         # female branch
-        "Pregnancy complications": a.get("pregnancy"),
+        "Pregnancy complications": (
+            {"Type 2 diabetes": a.get("preg_gdm"), "Hypertension": a.get("preg_htn"),
+             "Coronary Heart Disease": a.get("preg_htn"), "Stroke": a.get("preg_htn")}
+            if a.get("sex") == "Female" else None),
         # optional
         "Sleep": sleep_to_category(a.get("sleep_hours")),
         "Sleep apnea": a.get("sleep_apnea"),
@@ -417,11 +420,18 @@ def screen_health():
 
     if a.get("sex") == "Female":
         st.markdown("**Pregnancy history**")
-        a["pregnancy"] = st.radio(
-            "During a pregnancy, were you ever told you had diabetes, "
-            "preeclampsia or high blood pressure?",
-            ["No", "Yes"], horizontal=True, key="preg",
-            help="Leave as No if you have never been pregnant.",
+        # Two questions: the diabetes RR is for gestational diabetes, the others
+        # are for preeclampsia / high blood pressure in pregnancy
+        a["preg_gdm"] = st.radio(
+            "During a pregnancy, were you ever told you had diabetes?",
+            ["No", "Yes"], horizontal=True, key="preg_gdm_w",
+            help="Answer No if you have never been pregnant.",
+        )
+        a["preg_htn"] = st.radio(
+            "During a pregnancy, were you ever told you had preeclampsia or "
+            "high blood pressure?",
+            ["No", "Yes"], horizontal=True, key="preg_htn_w",
+            help="Answer No if you have never been pregnant.",
         )
 
     a["insured"] = st.radio("Do you have health insurance right now?",
@@ -461,9 +471,9 @@ def screen_optional():
 
     with st.expander("Sleep", expanded=True):
         a["sleep_hours"] = st.number_input("Hours of sleep on a typical night",
-                                           0.0, 12.0, 7.0, step=0.5, key="slp")
+                                           0.0, 12.0, None, step=0.5, key="slp")
         a["sleep_apnea"] = st.radio("Ever been told you have sleep apnea?",
-                                    ["No", "Yes"], horizontal=True, key="osa")
+                                    ["No", "Yes"], index=None, horizontal=True, key="osa")
 
     with st.expander("Food and drink"):
         a["drinks_week"] = st.number_input("Alcoholic drinks in a typical week",
@@ -473,27 +483,27 @@ def screen_optional():
             "(4 for women) in one sitting?", ["No", "Yes"],
             horizontal=True, key="binge_w")
         a["ssb_day"] = st.number_input(
-            "Sugary drinks per day (soda, juice, energy drinks)", 0, 6, 0,
+            "Sugary drinks per day (soda, juice, energy drinks)", 0, 6, None,
             key="ssb")
-        a["coffee_day"] = st.number_input("Cups of coffee per day", 0, 8, 1,
+        a["coffee_day"] = st.number_input("Cups of coffee per day", 0, 8, None,
                                           key="cof")
         a["salt"] = st.radio("How salty is your food, usually?",
                              ["Low", "Moderate", "High"],
                              format_func=lambda x: {"Low": "Not very",
                                                     "Moderate": "Somewhat",
                                                     "High": "Very"}[x],
-                             horizontal=True, key="salt_w")
+                             index=None, horizontal=True, key="salt_w")
 
     with st.expander("Work and mood"):
         a["depression"] = st.radio(
             "Over the last two weeks, have you often felt down, depressed "
-            "or hopeless?", ["No", "Yes"], horizontal=True, key="dep")
+            "or hopeless?", ["No", "Yes"], index=None, horizontal=True, key="dep")
         a["shift_work"] = st.radio("Do you work nights or rotating shifts?",
-                                   ["No", "Yes"], horizontal=True, key="shift")
+                                   ["No", "Yes"], index=None, horizontal=True, key="shift")
         a["work_hours"] = st.number_input("Hours you usually work per week",
-                                          0, 90, 40, key="wh")
+                                          0, 90, None, key="wh")
         a["isolation"] = st.radio("Do you often feel isolated or lonely?",
-                                  ["No", "Yes"], horizontal=True, key="iso")
+                                  ["No", "Yes"], index=None, horizontal=True, key="iso")
         a["cannabis"] = st.radio("Do you use cannabis daily or near daily?",
                                  ["No/rare", "Yes"], horizontal=True, key="thc")
         a["fin_strain"] = st.select_slider(
@@ -533,13 +543,18 @@ def screen_results():
             c[2].markdown(f"### {shown}")
         st.divider()
 
+    st.caption("How to read the 10-year column: high blood pressure means reaching "
+               "130/80 or above, which many people do before they are diagnosed. "
+               "Heart disease means coronary heart disease; the today column "
+               "covers any kind of heart disease.")
+
     with st.expander("What is driving these numbers"):
         pick = st.selectbox("Condition", list(CONDITIONS.values()), key="pick")
         key = [k for k, v in CONDITIONS.items() if v == pick][0]
         d = s2[key]
 
         st.write(f"Starting point for someone your age, sex, background and "
-                 f"county: **{d['p0']:.1%}**")
+                 f"county with no major risk factors: **{d['p0']:.1%}**")
         st.write(f"Everything about your daily life multiplies that by "
                  f"**{d['R']:.2f}**")
 
@@ -567,7 +582,8 @@ def screen_results():
             names = ", ".join(DISPLAY.get(f, f).lower() for f in protective)
             st.success(f"Working in your favour: {names}")
 
-        skipped = [DISPLAY[f] for f in DISPLAY if f not in profile]
+        skipped = [DISPLAY[f] for f in DISPLAY if f not in profile
+                   and not (f == "Pregnancy complications" and a.get("sex") != "Female")]
         if skipped:
             st.caption("Treated as average: " + ", ".join(skipped))
 
